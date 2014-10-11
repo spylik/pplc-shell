@@ -29,7 +29,7 @@ Features
 ---
 pplc-shell supports grep-style and regular expression definations for search patterns.
 
-Search Patterns defines via $LOOKINGFOR variable (createReport.php). Example:
+Search Patterns defines via LOOKINGFOR variable (createReport.php). Example:
 ```
 LOOKINGFOR=(
 "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/count_pending_messages'"
