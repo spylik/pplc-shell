@@ -13,12 +13,13 @@ For every input search patterns (hardcoded in script), script can calculate:
 pplc have implementations in others languages:
 
 https://github.com/spylik/pplc-php (PHP)
+
 https://github.com/spylik/pplc-erlang (Erlang)
 
 Goals
 ---
 pplc-shell is very simple script without optimizations for performance and beautiful code. General goal - quick and simple implementation of the test task.
-pplc-php works slowly and may have problems with huge log files. 
+pplc-shell cat log file for every search pattern. 
 
 How to run
 ---
