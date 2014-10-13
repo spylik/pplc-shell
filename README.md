@@ -40,3 +40,24 @@ LOOKINGFOR=(
 )
 
 ```
+Example of output:
+---
+```
+Pattern "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/count_pending_messages'"
+nmatched: 2430 average response time: 25.9967ms, median of response time: 15ms, mode of reponse time: 11ms, the most responded dyno: web.2
+
+Pattern "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/get_messages'"
+nmatched: 652 average response time: 62.1702ms, median of response time: 32ms, mode of reponse time: 23ms, the most responded dyno: web.11
+
+Pattern "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/get_friends_progress'"
+nmatched: 1117 average response time: 111.897ms, median of response time: 51ms, mode of reponse time: 35ms, the most responded dyno: web.5
+
+Pattern "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/get_friends_score'"
+nmatched: 1533 average response time: 228.765ms, median of response time: 143ms, mode of reponse time: 67ms, the most responded dyno: web.7
+
+Pattern "grep 'method=POST' | egrep '/api/users/[[:digit:]]{1,}'"
+nmatched: 2036 average response time: 82.4538ms, median of response time: 46ms, mode of reponse time: 23ms, the most responded dyno: web.11
+
+Pattern "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}'"
+nmatched: 6293 average response time: 96.7076ms, median of response time: 36ms, mode of reponse time: 11ms, the most responded dyno: web.8
+```
