@@ -13,7 +13,7 @@ LOOKINGFOR=(
 for l in "${LOOKINGFOR[@]}" 
 do
 	echo Pattern \"$l\"
-cat $1 | eval $l  | 
+	cat $1 | eval $l  | 
 	gawk '
 	{
 		split($0,a," "); 
@@ -40,6 +40,6 @@ cat $1 | eval $l  |
 		for(i in modeDyno){
 			if (modeDyno[i] > freq2) {modeDyn=i; freq2=modeDyno[i] }
 		}
-		print "nmatched: " total " average response time: " average"ms, median of response time: " median"ms, mode of reponse time: " mode"ms, the most responded dyno: " modeDyn"\n" 
+		print "matched: " total " average response time: " average"ms, median of response time: " median"ms, mode of reponse time: " mode"ms, the most responded dyno: " modeDyn"\n" 
 	}' ;
 done
