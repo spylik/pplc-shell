@@ -18,8 +18,7 @@ https://github.com/spylik/pplc-erlang (Erlang)
 
 Goals
 ---
-pplc-shell is very simple script without optimizations for performance and beautiful code. General goal - quick and simple implementation of the test task.
-pplc-shell cat log file for every search pattern. 
+pplc-shell is very simple script. pplc-shell cat log file for every search pattern. 
 
 How to run
 ---
@@ -29,7 +28,7 @@ Features
 ---
 pplc-shell supports grep-style and regular expression definations for search patterns.
 
-Search Patterns defines via LOOKINGFOR variable (createReport.php). Example:
+Search Patterns defines via LOOKINGFOR variable (createReport.sh). Example:
 ```
 LOOKINGFOR=(
 "grep 'method=GET' | egrep '/api/users/[[:digit:]]{1,}/count_pending_messages'"
